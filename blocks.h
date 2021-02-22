@@ -8,6 +8,7 @@ static const Block blocks[] = {
 	{" ",     "mpstat | awk '/all/ {print 100-$13 \"%\"}'",                                      30,          4},
 	{" ",     "sensors | awk '/Tctl/ {print $2}' | sed 's/+//'",                                 30,          5},
 	{"",      "volume",                                                                           0,           6},
+	{"",      "vpn",                                                                              10,          9},
 	{"",      "sed \"s/up//;s/down/❌/\" /sys/class/net/e*/operstate",                           60,          7},
 	{"",      " date '+%b %d (%a) %H:%M '",                                                       10,          8},
 };
